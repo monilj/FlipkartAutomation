@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.masterthought:cucumber-reporting:3.5.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.masterthought/cucumber-reporting/3.5.1/f3da0be867af432602df1b9899d006bef7da901b/cucumber-reporting-3.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.masterthought/cucumber-reporting/3.5.1/81b7202a344771c10dd65d5c44afe6b2173058b9/cucumber-reporting-3.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
