@@ -20,10 +20,10 @@ public class BaseStep extends DriverClass{
 
 
 
-    @After
-    public void afterScenario(Scenario scenario) {
-        if (null != driver) {
-            destroyDriver();
-        }
-    }
+//    @After
+//    public void afterScenario(Scenario scenario) {
+//        if (null != driver) {
+//            writeExtentReport();
+//        }
+//    }
 }

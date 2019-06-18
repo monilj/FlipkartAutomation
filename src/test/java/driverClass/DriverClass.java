@@ -1,24 +1,32 @@
 package driverClass;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
 
 public class DriverClass {
 
     public static WebDriver driver;
+
+    @BeforeTest
     public void initialize() {
         if (null == driver) {
-//            WebDriverManager.firefoxdriver().setup();
-//            driver = new FirefoxDriver();
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         }
     }
 
-    public void destroyDriver() {
+    @AfterTest
+    public static void destoryDriver() {
         driver.quit();
+    }
+}
 
-    }
-    }
+
+
+
+

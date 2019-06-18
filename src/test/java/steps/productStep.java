@@ -1,11 +1,11 @@
 package steps;
 
-import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import driverClass.DriverClass;
+import org.testng.annotations.Test;
 import pages.HomePage;
 
 
@@ -21,7 +21,7 @@ public class productStep extends DriverClass {
         driver.manage().window().maximize();
         Thread.sleep(1000);
     }
-
+    @Test
     @When("^User search for a \"([^\"]*)\"$")
     public void user_search_for_a_product(String productName) throws Throwable {
         homePage.searchFor(productName);
